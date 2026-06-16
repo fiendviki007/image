@@ -1,36 +1,56 @@
 {
-  "Change_Person_Photo_Request": {
-    "Business_Process_Parameters": {
-      "Auto_Complete": "optional",
-      "Run_Now": "optional",
-      "Discard_On_Exit_Validation_Error": "optional",
-      "Comment_Data": {
-        "Comment": "optional",
-        "Worker_Reference": {
-          "ID": "optional"
+  "Change_Person_Photo_Request": [
+    {
+      "Business_Process_Parameters": [
+        {
+          "Auto_Complete": "optional",
+          "Run_Now": "optional",
+          "Discard_On_Exit_Validation_Error": "optional",
+          "Comment_Data": [
+            {
+              "Comment": "optional",
+              "Worker_Reference": [
+                {
+                  "ID": "optional"
+                }
+              ]
+            }
+          ],
+          "Business_Process_Attachment_Data": [
+            {
+              "File_Name": "required",
+              "Event_Attachment_Description": "optional",
+              "Event_Attachment_Category_Reference": [
+                {
+                  "ID": "optional"
+                }
+              ],
+              "File": "optional",
+              "Content_Type": "optional"
+            }
+          ]
         }
-      },
-      "Business_Process_Attachment_Data": {
-        "File_Name": "required",
-        "Event_Attachment_Description": "optional",
-        "Event_Attachment_Category_Reference": {
-          "ID": "optional"
-        },
-        "File": "optional",
-        "Content_Type": "optional"
-      }
-    },
-    "Person_Photo_Data": {
-      "Person_Reference": {
-        "ID": "optional"
-      },
-      "Universal_ID_Reference": {
-        "ID": "optional"
-      },
-      "Photo_Data": {
-        "Filename": "optional",
-        "File": "required"
-      }
+      ],
+      "Person_Photo_Data": [
+        {
+          "Person_Reference": [
+            {
+              "ID": "optional"
+            }
+          ],
+          "Universal_ID_Reference": [
+            {
+              "ID": "optional"
+            }
+          ],
+          "Photo_Data": [
+            {
+              "Filename": "optional",
+              "File": "required"
+            }
+          ]
+        }
+      ]
     }
-  }
+  ]
 }
